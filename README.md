@@ -96,14 +96,13 @@ After running experiments, check `results/` JSON files for:
 ## Citation
 
 ```bibtex
-@inproceedings{temporal-decay-kg,
+@misc{temporal-decay-kg,
   title={Hierarchical Bayesian Temporal Decay for Knowledge Graph Retrieval},
-  author={...},
-  booktitle={...},
-  year={2026}
+  author={Karhade, Mandar},
+  email={mandar.karhade@citingale.com},
+  year={2026},
+  url={https://arxiv.org/abs/2604.26970},
+  eprint={2604.26970},
+  archivePrefix={arXiv}
 }
 ```
-
-## License
-
-MIT License - see source files for details.
