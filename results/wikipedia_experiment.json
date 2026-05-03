@@ -1,0 +1,328 @@
+{
+  "data": {
+    "total_edges": 11157,
+    "articles": 107,
+    "predicates": 2753,
+    "supersession_rate": 0.6815452182486331
+  },
+  "clustering": {
+    "hdbscan": {
+      "n_clusters": 390,
+      "silhouette": 0.6336638399773443,
+      "noise_pct": 0.2513621503814021
+    },
+    "dpgmm": {
+      "n_clusters": 9,
+      "silhouette": 0.3845822936883588
+    }
+  },
+  "cluster_profiles": {
+    "0": {
+      "n_edges": 1175,
+      "n_predicates": 313,
+      "mean_volatility": 0.3857512181702116,
+      "mean_velocity": 0.42215204416108637,
+      "median_lifetime_days": 41.308101851851916,
+      "supersession_rate": 0.6978723404255319,
+      "sample_predicates": [
+        "section:related_articles",
+        "section:external_link",
+        "section:introduction",
+        "section:places",
+        "section:reference"
+      ]
+    },
+    "1": {
+      "n_edges": 1785,
+      "n_predicates": 436,
+      "mean_volatility": 0.1570907487342586,
+      "mean_velocity": 0.9171519883436309,
+      "median_lifetime_days": 95.41604166666662,
+      "supersession_rate": 0.6683473389355742,
+      "sample_predicates": [
+        "section:references",
+        "section:further_reading",
+        "section:overview",
+        "section:causes",
+        "section:related_topics"
+      ]
+    },
+    "2": {
+      "n_edges": 190,
+      "n_predicates": 182,
+      "mean_volatility": 0.0,
+      "mean_velocity": 1.749382369180749,
+      "median_lifetime_days": 3867.819556654306,
+      "supersession_rate": 0.0,
+      "sample_predicates": [
+        "category:Biotechnology",
+        "infobox:type",
+        "category:Machine learning",
+        "infobox:foundation",
+        "infobox:title"
+      ]
+    },
+    "3": {
+      "n_edges": 83,
+      "n_predicates": 82,
+      "mean_volatility": 0.0,
+      "mean_velocity": 537.662728585915,
+      "median_lifetime_days": 928.671240740463,
+      "supersession_rate": 0.0,
+      "sample_predicates": [
+        "section:privacy",
+        "section:discovery_of_proton",
+        "section:on_communication",
+        "section:television",
+        "section:court_cases_and_lawsuits"
+      ]
+    },
+    "4": {
+      "n_edges": 4051,
+      "n_predicates": 442,
+      "mean_volatility": 0.181663460710701,
+      "mean_velocity": 0.296774289512705,
+      "median_lifetime_days": 80.32326388888873,
+      "supersession_rate": 0.8111577388299185,
+      "sample_predicates": [
+        "section:external_links",
+        "section:see_also",
+        "section:history",
+        "section:treatment",
+        "section:early_life"
+      ]
+    },
+    "5": {
+      "n_edges": 347,
+      "n_predicates": 98,
+      "mean_volatility": 0.08701324618189912,
+      "mean_velocity": 0.4814205268780607,
+      "median_lifetime_days": 261.6183796296291,
+      "supersession_rate": 0.6109510086455331,
+      "sample_predicates": [
+        "section:recognition",
+        "section:deep_neural_networks",
+        "infobox:chemical_formula",
+        "section:basic_principles",
+        "section:deep_learning_in_the_human_brain"
+      ]
+    },
+    "6": {
+      "n_edges": 2213,
+      "n_predicates": 63,
+      "mean_volatility": 0.3673633399229363,
+      "mean_velocity": 2.50913562940081,
+      "median_lifetime_days": 48.11871527777771,
+      "supersession_rate": 0.8978761861726163,
+      "sample_predicates": [
+        "lead_sentence",
+        "section:biography",
+        "section:applications",
+        "section:upcoming_launches",
+        "section:life"
+      ]
+    },
+    "7": {
+      "n_edges": 44,
+      "n_predicates": 24,
+      "mean_volatility": 0.04839087531268547,
+      "mean_velocity": 68.4583550360963,
+      "median_lifetime_days": 1214.9780231095938,
+      "supersession_rate": 0.3409090909090909,
+      "sample_predicates": [
+        "infobox:logo",
+        "section:governments",
+        "section:religion",
+        "section:security",
+        "infobox:author"
+      ]
+    },
+    "8": {
+      "n_edges": 163,
+      "n_predicates": 72,
+      "mean_volatility": 1.0,
+      "mean_velocity": 9.943459335119911,
+      "median_lifetime_days": 63.40987268518529,
+      "supersession_rate": 0.558282208588957,
+      "sample_predicates": [
+        "section:candidates_for_the_post_of_director-general",
+        "section:water_properties",
+        "section:scientific_opinion",
+        "section:similar_proteins",
+        "section:christian_empire,_313_-_395_ce"
+      ]
+    },
+    "9": {
+      "n_edges": 1106,
+      "n_predicates": 1041,
+      "mean_volatility": 0.0,
+      "mean_velocity": 0.3196564321340581,
+      "median_lifetime_days": 7819.805430523327,
+      "supersession_rate": 0.0,
+      "sample_predicates": [
+        "category:Oncology",
+        "category:British scientists",
+        "infobox:pubchem",
+        "category:World cities",
+        "infobox:legal_us"
+      ]
+    }
+  },
+  "survival": {
+    "0": {
+      "tau": 1467.3583644101382,
+      "shape": 0.2325709423624331,
+      "n_observations": 1175,
+      "aic": 10062.021919131485
+    },
+    "1": {
+      "tau": 2552.6463080903895,
+      "shape": 0.2543145274295183,
+      "n_observations": 1785,
+      "aic": 16272.861887338462
+    },
+    "4": {
+      "tau": 588.7101253631113,
+      "shape": 0.32874858422822223,
+      "n_observations": 4051,
+      "aic": 44100.73738419665
+    },
+    "5": {
+      "tau": 3392.654950849542,
+      "shape": 0.26187056074730775,
+      "n_observations": 347,
+      "aic": 2918.024327703709
+    },
+    "6": {
+      "tau": 181.15164258446038,
+      "shape": 0.35317198008658557,
+      "n_observations": 2213,
+      "aic": 23545.460720038638
+    },
+    "7": {
+      "tau": 69296.82268937158,
+      "shape": 0.2710244109115456,
+      "n_observations": 44,
+      "aic": 250.52098666101702
+    },
+    "8": {
+      "tau": 12059.090924890234,
+      "shape": 0.16653577342441594,
+      "n_observations": 163,
+      "aic": 955.4388178427293
+    }
+  },
+  "distribution_comparison": {
+    "0": {
+      "aic": {
+        "weibull": 10062.021919131485,
+        "exponential": 14960.943157810796,
+        "lognormal": 9766.300461372406
+      },
+      "best": "lognormal"
+    },
+    "1": {
+      "aic": {
+        "weibull": 16272.861887338462,
+        "exponential": 22096.685727763695,
+        "lognormal": 15884.814669501273
+      },
+      "best": "lognormal"
+    },
+    "2": {
+      "aic": {
+        "weibull": 4.0,
+        "exponential": 2.0,
+        "lognormal": 4.0
+      },
+      "best": "exponential"
+    },
+    "3": {
+      "aic": {
+        "weibull": 4.0,
+        "exponential": 2.0,
+        "lognormal": 4.0
+      },
+      "best": "exponential"
+    },
+    "4": {
+      "aic": {
+        "weibull": 44100.73738419665,
+        "exponential": 55743.142345520755,
+        "lognormal": 42865.00360261468
+      },
+      "best": "lognormal"
+    },
+    "5": {
+      "aic": {
+        "weibull": 2918.024327703709,
+        "exponential": 3822.442006588471,
+        "lognormal": 2871.78062142533
+      },
+      "best": "lognormal"
+    },
+    "6": {
+      "aic": {
+        "weibull": 23545.460720038638,
+        "exponential": 30517.585914032516,
+        "lognormal": 23220.397515345794
+      },
+      "best": "lognormal"
+    },
+    "7": {
+      "aic": {
+        "weibull": 250.52098666101702,
+        "exponential": 303.51706260670824,
+        "lognormal": 247.17824458093406
+      },
+      "best": "lognormal"
+    },
+    "8": {
+      "aic": {
+        "weibull": 955.4388178427293,
+        "exponential": 1766.0671725994873,
+        "lognormal": 927.426119380671
+      },
+      "best": "lognormal"
+    },
+    "9": {
+      "aic": {
+        "weibull": 4.0,
+        "exponential": 2.0,
+        "lognormal": 4.0
+      },
+      "best": "exponential"
+    }
+  },
+  "retrieval": {
+    "n_queries": 199,
+    "no_temporal": {
+      "ndcg_5": 0.551156127146677,
+      "ndcg_10": 0.591757646521702,
+      "mrr": 0.49124154715268176,
+      "precision_5": 0.1608040201005025,
+      "precision_10": 0.09246231155778893
+    },
+    "uniform_exponential": {
+      "ndcg_5": 0.0,
+      "ndcg_10": 0.0,
+      "mrr": 0.0006753068163553711,
+      "precision_5": 0.0,
+      "precision_10": 0.0
+    },
+    "uniform_halflife": {
+      "ndcg_5": 0.0,
+      "ndcg_10": 0.0,
+      "mrr": 0.0006502606850671107,
+      "precision_5": 0.0,
+      "precision_10": 0.0
+    },
+    "type_level": {
+      "ndcg_5": 0.01824587815865054,
+      "ndcg_10": 0.019831128795764756,
+      "mrr": 0.023269612697036455,
+      "precision_5": 0.004020100502512563,
+      "precision_10": 0.002512562814070352
+    }
+  }
+}

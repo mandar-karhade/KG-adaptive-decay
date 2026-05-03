@@ -1,0 +1,172 @@
+{
+  "epsilon_sensitivity": {
+    "0.1": {
+      "total_edges": 118247,
+      "supersession_rate": 0.9887946417245258,
+      "hdbscan_clusters": 4,
+      "hdbscan_ari": 1.0,
+      "shapes": {
+        "permanent_facts": 0.699,
+        "current_state": 0.901,
+        "volatile_measurements": 0.809,
+        "periodic_assessments": 1.025
+      },
+      "lindy_clusters": 3,
+      "total_fitted_clusters": 4
+    },
+    "0.2": {
+      "total_edges": 118247,
+      "supersession_rate": 0.9887946417245258,
+      "hdbscan_clusters": 4,
+      "hdbscan_ari": 1.0,
+      "shapes": {
+        "permanent_facts": 0.699,
+        "current_state": 0.901,
+        "volatile_measurements": 0.809,
+        "periodic_assessments": 1.025
+      },
+      "lindy_clusters": 3,
+      "total_fitted_clusters": 4
+    },
+    "0.3": {
+      "total_edges": 118247,
+      "supersession_rate": 0.9887946417245258,
+      "hdbscan_clusters": 4,
+      "hdbscan_ari": 1.0,
+      "shapes": {
+        "permanent_facts": 0.699,
+        "current_state": 0.901,
+        "volatile_measurements": 0.809,
+        "periodic_assessments": 1.025
+      },
+      "lindy_clusters": 3,
+      "total_fitted_clusters": 4
+    },
+    "0.4": {
+      "total_edges": 118247,
+      "supersession_rate": 0.9887946417245258,
+      "hdbscan_clusters": 4,
+      "hdbscan_ari": 1.0,
+      "shapes": {
+        "permanent_facts": 0.699,
+        "current_state": 0.901,
+        "volatile_measurements": 0.809,
+        "periodic_assessments": 1.025
+      },
+      "lindy_clusters": 3,
+      "total_fitted_clusters": 4
+    },
+    "0.5": {
+      "total_edges": 118247,
+      "supersession_rate": 0.9887946417245258,
+      "hdbscan_clusters": 4,
+      "hdbscan_ari": 1.0,
+      "shapes": {
+        "permanent_facts": 0.699,
+        "current_state": 0.901,
+        "volatile_measurements": 0.809,
+        "periodic_assessments": 1.025
+      },
+      "lindy_clusters": 3,
+      "total_fitted_clusters": 4
+    },
+    "0.7": {
+      "total_edges": 118247,
+      "supersession_rate": 0.9887946417245258,
+      "hdbscan_clusters": 4,
+      "hdbscan_ari": 1.0,
+      "shapes": {
+        "permanent_facts": 0.699,
+        "current_state": 0.901,
+        "volatile_measurements": 0.809,
+        "periodic_assessments": 1.025
+      },
+      "lindy_clusters": 3,
+      "total_fitted_clusters": 4
+    },
+    "1.0": {
+      "total_edges": 118247,
+      "supersession_rate": 0.9887946417245258,
+      "hdbscan_clusters": 4,
+      "hdbscan_ari": 1.0,
+      "shapes": {
+        "permanent_facts": 0.699,
+        "current_state": 0.901,
+        "volatile_measurements": 0.809,
+        "periodic_assessments": 1.025
+      },
+      "lindy_clusters": 3,
+      "total_fitted_clusters": 4
+    }
+  },
+  "lognormal_hazard": {
+    "current_state": {
+      "mu": 3.964,
+      "sigma": 1.074,
+      "t_peak_days": 16.6,
+      "hazard_at_points": {
+        "1d": 0.00041,
+        "7d": 0.009363,
+        "30d": 0.015413,
+        "90d": 0.011789,
+        "365d": 0.005607,
+        "1095d": 0.002652,
+        "1825d": 0.001817
+      },
+      "hazard_decreasing_after_peak": true
+    },
+    "periodic_assessments": {
+      "mu": 4.491,
+      "sigma": 1.04,
+      "t_peak_days": 30.2,
+      "hazard_at_points": {
+        "1d": 3.5e-05,
+        "7d": 0.002771,
+        "30d": 0.008664,
+        "90d": 0.008579,
+        "365d": 0.004781,
+        "1095d": 0.002406,
+        "1825d": 0.001681
+      },
+      "hazard_decreasing_after_peak": true
+    },
+    "permanent_facts": {
+      "mu": 5.661,
+      "sigma": 1.199,
+      "t_peak_days": 68.2,
+      "hazard_at_points": {
+        "1d": 5e-06,
+        "7d": 0.000392,
+        "30d": 0.001936,
+        "90d": 0.002775,
+        "365d": 0.002122,
+        "1095d": 0.001232,
+        "1825d": 0.000902
+      },
+      "hazard_decreasing_after_peak": true
+    },
+    "volatile_measurements": {
+      "mu": 0.882,
+      "sigma": 1.134,
+      "t_peak_days": 0.7,
+      "hazard_at_points": {
+        "1d": 0.332588,
+        "7d": 0.185826,
+        "30d": 0.075521,
+        "90d": 0.033885,
+        "365d": 0.011184,
+        "1095d": 0.004481,
+        "1825d": 0.0029
+      },
+      "hazard_decreasing_after_peak": true
+    }
+  },
+  "gradient_bayesian_ranking": {
+    "mean_top100_overlap": 0.00045,
+    "std_top100_overlap": 0.002073041244162788,
+    "bayesian_ndcg10": 0.25356562398251464,
+    "gradient_ndcg10": 0.045457475816618007,
+    "ndcg_correlation": -0.3060528169484963,
+    "n_queries": 200
+  }
+}

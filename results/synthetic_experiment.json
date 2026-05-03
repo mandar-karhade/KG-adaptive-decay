@@ -1,0 +1,302 @@
+{
+  "generation": {
+    "summary": {
+      "total_edges": 118247,
+      "superseded_edges": 116922,
+      "censored_edges": 1325,
+      "clusters": 4,
+      "cohorts": {
+        "current_state": 3,
+        "periodic_assessments": 3,
+        "permanent_facts": 3,
+        "volatile_measurements": 3
+      },
+      "entities": 265,
+      "predicates": 20,
+      "mean_lifetime_by_cluster": {
+        "current_state": 96.91056584774958,
+        "periodic_assessments": 148.19460460836098,
+        "permanent_facts": 1037.6280612404594,
+        "volatile_measurements": 5.066687125900706
+      },
+      "median_lifetime_by_cluster": {
+        "current_state": 51.964536253573385,
+        "periodic_assessments": 95.76270484714985,
+        "permanent_facts": 1142.6043886868488,
+        "volatile_measurements": 2.370596848036314
+      },
+      "supersession_rate_by_cluster": {
+        "current_state": 0.9451324659037467,
+        "periodic_assessments": 0.9172185430463576,
+        "permanent_facts": 0.3769470404984424,
+        "volatile_measurements": 0.9972197508896797
+      },
+      "mean_reinforcements_by_cluster": {
+        "current_state": 9.023201128703558,
+        "periodic_assessments": 3.6143889223359422,
+        "permanent_facts": 10.467289719626168,
+        "volatile_measurements": 2.9861358244365364
+      }
+    },
+    "time_seconds": 0.5673768520355225
+  },
+  "clustering": {
+    "hdbscan": {
+      "n_clusters": 4,
+      "ari": 1.0,
+      "nmi": 1.0,
+      "silhouette": 0.907706759644844
+    },
+    "dpgmm": {
+      "n_clusters": 8,
+      "ari": 0.8446866485013624,
+      "nmi": 0.8927610866023038,
+      "silhouette": 0.7486069315744853
+    },
+    "time_seconds": 0.08189201354980469
+  },
+  "bayesian": {
+    "planted_params": {
+      "permanent_facts": {
+        "theta": [
+          8.0,
+          -0.1,
+          -0.1,
+          0.0
+        ],
+        "shape": 0.5
+      },
+      "current_state": {
+        "theta": [
+          5.5,
+          -0.3,
+          -1.5,
+          0.1
+        ],
+        "shape": 1.2
+      },
+      "volatile_measurements": {
+        "theta": [
+          3.0,
+          -0.5,
+          -2.0,
+          0.2
+        ],
+        "shape": 1.0
+      },
+      "periodic_assessments": {
+        "theta": [
+          4.5,
+          -0.2,
+          -1.0,
+          0.05
+        ],
+        "shape": 0.8
+      }
+    },
+    "recovered_params": {
+      "current_state": {
+        "tau": 98.32268640450518,
+        "shape": 0.9011679224309814,
+        "n_observations": 6377,
+        "n_superseded": 6029,
+        "aic": 67898.57854588673,
+        "theta": [
+          6.127080255567374,
+          -4.272690230657545,
+          -1.4998597808662841,
+          -0.7195581340745852
+        ],
+        "theta_r_squared": 0.12162786587503571
+      },
+      "periodic_assessments": {
+        "tau": 163.06552083399518,
+        "shape": 1.025485519506384,
+        "n_observations": 3322,
+        "n_superseded": 3047,
+        "aic": 37082.10212044236,
+        "theta": [
+          6.287639024089164,
+          -28.938969808109025,
+          -2.5732810673756203,
+          66.67400605771356
+        ],
+        "theta_r_squared": 0.05710994368677158
+      },
+      "permanent_facts": {
+        "tau": 3847.4961693886517,
+        "shape": 0.6993109714644795,
+        "n_observations": 639,
+        "n_superseded": 242,
+        "aic": 4279.0755063129545,
+        "theta": [
+          6.475779849785503,
+          10.258985803981023,
+          2.4558960892508437,
+          -79.28580627299795
+        ],
+        "theta_r_squared": 0.03197077935185644
+      },
+      "volatile_measurements": {
+        "tau": 4.333075393329475,
+        "shape": 0.8088185481160874,
+        "n_observations": 107904,
+        "n_superseded": 107604,
+        "aic": 552389.6728848107,
+        "theta": [
+          3.5991590787400987,
+          -0.6505305910391571,
+          -1.2515164565515073,
+          0.009217582732187212
+        ],
+        "theta_r_squared": 0.07481033888179911
+      }
+    },
+    "distribution_comparison": {
+      "current_state": {
+        "aic_scores": {
+          "weibull": 67898.57854588673,
+          "exponential": 68033.72577437408,
+          "lognormal": 66749.06900123016
+        },
+        "best_distribution": "lognormal"
+      },
+      "periodic_assessments": {
+        "aic_scores": {
+          "weibull": 37082.10212044236,
+          "exponential": 37083.59887023262,
+          "lognormal": 36891.08560440029
+        },
+        "best_distribution": "lognormal"
+      },
+      "permanent_facts": {
+        "aic_scores": {
+          "weibull": 4279.0755063129545,
+          "exponential": 4319.904112713332,
+          "lognormal": 4258.476600983074
+        },
+        "best_distribution": "lognormal"
+      },
+      "volatile_measurements": {
+        "aic_scores": {
+          "weibull": 552389.6728848107,
+          "exponential": 565024.4271783438,
+          "lognormal": 523644.28792831086
+        },
+        "best_distribution": "lognormal"
+      }
+    },
+    "n_cohort_fits": 12,
+    "n_individual_fits": 201,
+    "time_seconds": 40.857828855514526
+  },
+  "gradient": {
+    "cluster_theta": {
+      "current_state": [
+        5.235444068908691,
+        3.2738101482391357,
+        3.0703790187835693,
+        0.2840779721736908
+      ],
+      "periodic_assessments": [
+        5.904167652130127,
+        3.7764182090759277,
+        2.0521461963653564,
+        4.2378668785095215
+      ],
+      "permanent_facts": [
+        7.422657489776611,
+        3.7343456745147705,
+        4.477893352508545,
+        6.141540050506592
+      ],
+      "volatile_measurements": [
+        5.076905727386475,
+        2.2283787727355957,
+        4.465811252593994,
+        1.9171732664108276
+      ]
+    },
+    "cluster_shape": {
+      "current_state": 1.315145492553711,
+      "periodic_assessments": 1.1420769691467285,
+      "permanent_facts": 0.7831268906593323,
+      "volatile_measurements": 1.0709707736968994
+    },
+    "final_loss": 2.4444830417633057,
+    "time_seconds": 3.2908339500427246
+  },
+  "retrieval": {
+    "n_queries": 200,
+    "time_seconds": 43.289146900177,
+    "no_temporal": {
+      "ndcg_5": 0.2744145747191762,
+      "ndcg_10": 0.2646883663304074,
+      "mrr": 0.4568450078805501,
+      "precision_5": 0.253,
+      "precision_10": 0.24750000000000003
+    },
+    "uniform_exponential": {
+      "ndcg_5": 0.014979038531416928,
+      "ndcg_10": 0.00972037107114882,
+      "mrr": 0.03516310894331718,
+      "precision_5": 0.014000000000000002,
+      "precision_10": 0.007000000000000001
+    },
+    "uniform_halflife": {
+      "ndcg_5": 0.014979038531416928,
+      "ndcg_10": 0.00972037107114882,
+      "mrr": 0.03516321400553217,
+      "precision_5": 0.014000000000000002,
+      "precision_10": 0.007000000000000001
+    },
+    "type_level": {
+      "ndcg_5": 0.24103281687234307,
+      "ndcg_10": 0.25356562398251464,
+      "mrr": 0.2333083799673753,
+      "precision_5": 0.256,
+      "precision_10": 0.2655
+    },
+    "type_cohort": {
+      "ndcg_5": 0.24637240873660168,
+      "ndcg_10": 0.2431418957155433,
+      "mrr": 0.26834076782904287,
+      "precision_5": 0.244,
+      "precision_10": 0.24
+    },
+    "full_hierarchical": {
+      "ndcg_5": 0.2599016570493708,
+      "ndcg_10": 0.2513656706611021,
+      "mrr": 0.2684010940841824,
+      "precision_5": 0.26299999999999996,
+      "precision_10": 0.24900000000000003
+    }
+  },
+  "inference_comparison": {
+    "shape_comparison": {
+      "current_state": {
+        "bayesian_shape": 0.9011679224309814,
+        "gradient_shape": 1.315145492553711,
+        "difference": 0.4139775701227295
+      },
+      "periodic_assessments": {
+        "bayesian_shape": 1.025485519506384,
+        "gradient_shape": 1.1420769691467285,
+        "difference": 0.11659144964034462
+      },
+      "permanent_facts": {
+        "bayesian_shape": 0.6993109714644795,
+        "gradient_shape": 0.7831268906593323,
+        "difference": 0.08381591919485276
+      },
+      "volatile_measurements": {
+        "bayesian_shape": 0.8088185481160874,
+        "gradient_shape": 1.0709707736968994,
+        "difference": 0.26215222558081197
+      }
+    },
+    "bayesian_time": 40.857828855514526,
+    "gradient_time": 3.2908339500427246,
+    "lindy_agreement": true
+  }
+}
